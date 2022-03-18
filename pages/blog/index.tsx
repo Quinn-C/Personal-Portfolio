@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Container from "components/Layout/Container";
-import { Posts } from "components/Posts";
+//import { Posts } from "components/Posts";
 
 export default function Blog() {
   return (
@@ -12,7 +12,7 @@ export default function Blog() {
         <br />
         Initially, I started the 100DaysOfCodeChallenge on Twitter, but gradually I found I want to write down more details in different topics of what I have learned in a frequncy of weeks. So I decided to write blogs to record my code learning journey after graduating from the bootcamp.
       </Paragraph>
-      <Posts title="All Stories" />
+      {/* <Posts title="All Stories" /> */}
     </Container>
   );
 }
