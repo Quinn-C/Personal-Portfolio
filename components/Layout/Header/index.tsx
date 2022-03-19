@@ -13,6 +13,7 @@ export const Header = ({ darkTheme, changeTheme }: HeaderProps) => {
     <StickyNav darkTheme={darkTheme}>
       <Wrapper>
         <div>
+          <img src="jqc.png" alt="logo"/>
           <Navigation href="/" text="Home" />
           <Navigation href="/about-me" text="About me" />
           <Navigation href="/projects" text="Projects" />

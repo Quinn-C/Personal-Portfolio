@@ -27,6 +27,7 @@ export default function Container({ children, ...customMeta }: ContainerProps) {
     description: `Coding Bootcamp Graduate with Engineering Academic Background.`,
     image: "https://www.adrinlol.com/assets/png/Thumbnail.png",
     type: "website",
+    icon: "jqc.ico",
     ...customMeta,
   };
 
@@ -61,6 +62,7 @@ export default function Container({ children, ...customMeta }: ContainerProps) {
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
+        <link rel="icon" type="image/x-icon" href={meta.icon}></link>
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}
