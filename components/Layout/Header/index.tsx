@@ -1,6 +1,5 @@
 import { Navigation } from "components/Layout/Navigation";
 import { COLOR_BLACK, COLOR_WHITE } from "lib/colorPalette";
-
 import { Wrapper, StickyNav } from "components/Layout/Header/styles";
 
 interface HeaderProps {
@@ -13,7 +12,6 @@ export const Header = ({ darkTheme, changeTheme }: HeaderProps) => {
     <StickyNav darkTheme={darkTheme}>
       <Wrapper>
         <div>
-          <img src="jqc.png" alt="logo"/>
           <Navigation href="/" text="Home" />
           <Navigation href="/about-me" text="About me" />
           <Navigation href="/projects" text="Projects" />

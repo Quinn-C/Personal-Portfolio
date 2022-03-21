@@ -8,7 +8,7 @@ import {
   COLOR_WHITE,
 } from "lib/colorPalette";
 
-import { PlayingWrapper } from "components/NowPlaying/styles";
+//import { PlayingWrapper } from "components/NowPlaying/styles";
 
 export const FooterContainer = styled.footer<StringProps>`
   margin-bottom: 2rem;
@@ -35,11 +35,7 @@ export const FooterContainer = styled.footer<StringProps>`
     color: ${({ darkTheme }) => (darkTheme ? COLOR_WHITE : COLOR_BLACK)};
   }
 
-  ${PlayingWrapper} {
-    a {
-      color: ${({ darkTheme }) => (darkTheme ? COLOR_LIGHT_GRAY : COLOR_BLACK)};
-    }
-  }
+ 
 `;
 
 export const GridContainer = styled.div`

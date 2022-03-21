@@ -15,7 +15,7 @@ export default function Testimonials() {
         >
           School of Code
         </a>
-        , I have done some team projects. In addition, I am working on my own side projects.
+        , I have done some team projects. In addition, I am working on my own side projects by using the new programming languages and tools that I have learned.
         <br />
         Here are the projects:
       </Paragraph>

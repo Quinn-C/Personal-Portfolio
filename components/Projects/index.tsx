@@ -5,18 +5,15 @@ import { Container, Item } from "components/Posts/styles";
 import { Data, ProjectsProps } from "lib/types";
 
 export const Projects = () => {
-  const { data } = useSWR<Data>("/api/github", fetcher);
+  const { data } = useSWR<Data>("/api/projects", fetcher);
 
   return (
     <Container>
       <h3>Projects</h3>
-      {data?.message ? (
-        <h4>Maximum rate limit reached.</h4>
-      ) : (
-        data?.popular.map((item: ProjectsProps, id: number) => {
+        {data?.map((item: ProjectsProps, id: number) => {
           return (
             <a
-              href={item.htmlUrl} //item.homepage which is in the about.
+              href={item.url} //item.homepage which is in the about.
               target="_blank"
               className="color-black"
               key={id}
@@ -28,16 +25,16 @@ export const Projects = () => {
                     <span className="item-number">{`${id < 9 ? "0" : ""}${
                       id + 1
                     }`}</span>
-                    <h4>{item.name}</h4>
+                    <h4>{item.title}</h4>
                   </Flex>
                   {/* <span>{item.stars} Stars</span> */}
                 </Flex>
-                <p>{item.description}</p>
+                <p>{item.short_intro}</p>
               </Item>
             </a>
           );
-        })
-      )}
+        })}
+
     </Container>
   );
 };

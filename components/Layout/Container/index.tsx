@@ -25,9 +25,8 @@ export default function Container({ children, ...customMeta }: ContainerProps) {
   const meta = {
     title: "Joan Qing Chen – Software Engineer",
     description: `Coding Bootcamp Graduate with Engineering Academic Background.`,
-    image: "https://www.adrinlol.com/assets/png/Thumbnail.png",
+    //image: ,
     type: "website",
-    icon: "jqc.ico",
     ...customMeta,
   };
 
@@ -46,23 +45,17 @@ export default function Container({ children, ...customMeta }: ContainerProps) {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta
-          property="og:url"
-          content={`https://adrinlol.com${router.asPath}`}
-        />
-        <link rel="canonical" href={`https://adrinlol.com${router.asPath}`} />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Joan Qing Chen" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content={meta.image} />
+        {/* <meta property="og:image" content={meta.image} /> */}
         <meta property="og:image:alt" content={meta.title} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@adrinlolx" />
+        <meta name="twitter:site" content="@Joanqingchen" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
-        <meta name="twitter:image" content={meta.image} />
-        <link rel="icon" type="image/x-icon" href={meta.icon}></link>
+        {/* <meta name="twitter:image" content={meta.image} /> */}
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}

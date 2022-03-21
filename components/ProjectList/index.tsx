@@ -34,13 +34,15 @@ export const ProjectList = () => {
               blurDataURL="blur"
             />
           )} */}
-          <h4>{item.title}</h4>
+          <h3>{item.title}</h3>
           <p>{item.text}</p>
           {item.author && (
             <Flex justify={id % 2 !== 0 ? "flex-end" : "flex-start"}>
               <AuthorContainer darkTheme={resolvedTheme === "dark"}>
                 <span>{item.author}</span>
-                <span>{item.position}</span>
+                <span>{item.time}</span>
+                <span>Stack or Tools: {item.tools}</span>
+                <span>{item.language}</span>
               </AuthorContainer>
             </Flex>
           )}

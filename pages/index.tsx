@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Image from "next/image";
 import { Timeline } from "components/Timeline";
 import { Projects } from "components/Projects";
-import { Posts } from "components/Posts";
+//import { Posts } from "components/Posts";
 import Container from "components/Layout/Container";
 import { StringProps } from "lib/types";
 import { devices } from "lib/displayDevice";
@@ -20,7 +20,10 @@ export default function Home() {
           <h1>Joan Qing Chen</h1>
           <h2>Full Stack Software Engineer</h2>
           <p>
-          Coding Bootcamp Graduate with Engineering Academic Background and a great passion in tech. Having been working in tech companies for 3 years. I have seen how greatly technology enables businesses and people to solve problems. So I was inspired to be a software engineer as my future career path and joined a Coding Bootcamp so I can also be a part of that journey.–&nbsp;
+          Hi there, I am a coding Bootcamp graduate with an engineering academic background and a passion in technology.
+          <br/>
+          <br/>
+          Having been working in tech companies for 3 years, I have seen how greatly technology enables businesses and people to solve problems. I was inspired to be a software engineer as my future career path, so I can develop or create solutions to problems.  –&nbsp;
             {" while you're here "}
             <Link href="/about-me">
               <a>learn more about me.</a>

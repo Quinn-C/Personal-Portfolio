@@ -24,10 +24,10 @@ export interface PostsProps {
 }
 
 export interface ProjectsProps {
-  htmlUrl: string;
-  name: string;
-  stars: string;
-  description: string;
+  url: string;
+  title: string;
+  text: string;
+  short_intro: string;
 }
 
 export interface ExternalLinkProps {

@@ -33,7 +33,7 @@ export const Footer = ({ darkTheme }: StringProps) => {
               <Navigation href="/contact-me" text="Contact me" />
             </FlexLinks>
             <FlexLinks>
-              <ExternalLink href="https://twitter.com/QuinnCh24322581">
+              <ExternalLink href="https://twitter.com/Joanqingchen">
                 Twitter
               </ExternalLink>
               <ExternalLink href="https://github.com/Quinn-C">
